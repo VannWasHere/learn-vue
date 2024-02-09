@@ -1,7 +1,7 @@
 // Router Config
 import { createRouter, createWebHistory } from "vue-router";
 import HomePages from '../pages/HomePages.vue'
-import AbouPagest from '../pages/AboutPages.vue'
+import AbouPages from '../pages/AboutPages.vue'
 import ProductPages from '../pages/ProductPages'
 import ContactPages from '../pages/ContactPages'
 import LoginPages from '../pages/LoginPages'
@@ -15,7 +15,7 @@ const routes = [
     {
         path: '/about',
         name: 'About',
-        component: AbouPagest
+        component: AbouPages
     },
     {
         path: '/products',
