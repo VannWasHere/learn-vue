@@ -1,25 +1,24 @@
 <template>
-  <header>
-    <NavigationBar/>
-  </header>
+  <LoginPages/>
 </template>
 
 <script>
-import NavigationBar from './components/NavigationBar.vue';
+import LoginPages from './pages/LoginPages.vue'
 export default {
-  name: 'App',
+  name: 'LoginVue',
   components: {
-    NavigationBar
+    LoginPages
   }
 }
 </script>
 
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #2b2e31;
 }

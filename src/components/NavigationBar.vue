@@ -15,7 +15,7 @@
         </section>
         <section class="right-navbar">
             <div class="profile-section">
-                <h2><a href="">Justine Donovan</a></h2>
+                <h2><a href="">{{ name }}</a></h2>
             </div>
             <button id="sign-out-button">Sign Out</button>
         </section>
@@ -24,7 +24,10 @@
 
 <script>
 export default {
-    name: 'NavigationBar'
+    name: 'NavigationBar',
+    props: {
+        name: String
+    }
 }
 </script>
 
