@@ -6,10 +6,10 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Contact</a></li>
+                    <router-link to="/" class="vue-link">Home</router-link>
+                    <router-link to="/about" class="vue-link">About</router-link>
+                    <router-link to="/products" class="vue-link">Products</router-link>
+                    <router-link to="/contact" class="vue-link">Contact</router-link>
                 </ul>
             </div>
         </section>
@@ -61,13 +61,6 @@ export default {
     .nav-list ul {
         display: flex;
         justify-content: space-between;
-    }
-    .nav-list ul>li{
-        list-style: none;
-    }
-    .nav-list ul>li a {
-        text-decoration: none;
-        color: #d9d9d9;
     }
     .right-navbar {
         display: flex;

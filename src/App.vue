@@ -1,13 +1,16 @@
 <template>
-  <LoginPages/>
+  <NavigationBar/>
+  <main>
+    <router-view/>
+  </main>
 </template>
 
 <script>
-import LoginPages from './pages/LoginPages.vue'
+import NavigationBar from './components/NavigationBar.vue';
 export default {
-  name: 'LoginVue',
+  name: "App",
   components: {
-    LoginPages
+    NavigationBar
   }
 }
 </script>
@@ -27,6 +30,15 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #d9d9d9;
+}
+
+main {
+  padding: 10px;
+}
+
+.vue-link {
+  text-decoration: none;
   color: #d9d9d9;
 }
 </style>

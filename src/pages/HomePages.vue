@@ -1,9 +1,11 @@
 <template>
     <div class="">
-
+        <h1>Home Pages</h1>
     </div>
 </template>
 
-<script lang="ts">
-
+<script>
+export default {
+    name: "HomePages"
+}
 </script>

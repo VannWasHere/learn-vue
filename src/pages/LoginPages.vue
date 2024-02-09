@@ -1,6 +1,6 @@
 <template>
     <div class="form">
-        <form class="form-container">
+        <div class="form-container">
             <div class="form-input">
                 <label for="username">Username</label> <br>
                 <input type="text" placeholder="Ex: Justine Donovan">
@@ -10,7 +10,7 @@
                 <input type="password" placeholder="Input Password">
             </div>
             <button type="submit">Submit Form</button>
-        </form>
+        </div>
     </div>
 </template>
 
