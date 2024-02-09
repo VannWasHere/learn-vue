@@ -1,23 +1,9 @@
-# blog-vue
+# Learning How to Vue
 
-## Project setup
+## 1. Installing Vue and Dependencies
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+vue create .
+npm install vue-router@4
 ```
 
 ### Customize configuration
