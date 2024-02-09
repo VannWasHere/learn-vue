@@ -3,7 +3,10 @@
 ## 1. Installing Vue and Dependencies
 ```
 vue create .
+```
+```
 npm install vue-router@4
+
 ```
 
 ### Customize configuration
