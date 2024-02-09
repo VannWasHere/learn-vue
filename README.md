@@ -6,7 +6,6 @@ vue create .
 ```
 ```
 npm install vue-router@4
-
 ```
 
 ### Customize configuration
