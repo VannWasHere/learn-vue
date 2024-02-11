@@ -36,7 +36,11 @@ export default {
         display: flex;
         justify-content: space-between;
         padding: 15px;
-        background-color: rgb(17, 15, 15);
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+        top: 0;
     }
     .left-navbar {
         display: flex;
@@ -61,6 +65,7 @@ export default {
     .nav-list ul {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
     }
     .right-navbar {
         display: flex;
@@ -75,7 +80,7 @@ export default {
     }
     .profile-section h2 a{
         text-decoration: none;
-        color: #d9d9d9;
+        color: #1B1A17;
     }
     #sign-out-button {
         cursor: pointer;
@@ -85,6 +90,10 @@ export default {
         background-color: red;
         border:none;
         color: #d9d9d9;
+        font-weight: bold;
+    }
+    .vue-link {
+        color: #1B1A17;
         font-weight: bold;
     }
 </style>
