@@ -4,22 +4,26 @@
             <img src="../assets/sample-images.png" alt="Product Names">
         </div>
         <div class="card-info">
+            <p id="product-name">{{ ProductName }}</p>
             <div class="card-desc">
-                <p id="product-name">{{ ProductName }}</p>
                 <p id="product-price">Rp. {{ ProductPrice }}</p>
+                <ButtonElement message="See Product"/>
             </div>
-            <button id="see-details">See Details</button>
         </div>
     </div>
 </template>
 
 <script>
+import ButtonElement from './ButtonElement.vue';
 export default {
     name: 'MiniCard',
     props: {
         ProductName: String,
         ProductPrice: String
-    }
+    },
+    components: {
+    ButtonElement,
+}
 }
 </script>
 
@@ -48,17 +52,26 @@ export default {
 .card-info {
     height: 100%;
     background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
 }
 .card-desc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 80%;
-    padding: 5px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
 #product-name {
     font-weight: bold;
+}
+#product-price {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(5, 84, 5);
+    padding: 1px 2px;
 }
 </style>
